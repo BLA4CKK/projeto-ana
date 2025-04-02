@@ -1,0 +1,106 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(71,0,122);
+    background: linear-gradient(90deg, rgba(71,0,122,1) 0%, rgba(154,19,217,1) 31%, rgba(235,19,92,1) 53%, rgba(254,205,41,1) 65%, rgba(252,177,10,1) 78%, rgba(255,95,63,1) 100%);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.551);
+    color: rgb(4, 4, 4);
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.551);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contador-tempo p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#proximas-datas ul {
+    list-style: none;
+    padding: 0;
+}
+
+#proximas-datas li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*  */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    max-width: 600px;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}

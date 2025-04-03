@@ -9,7 +9,7 @@ function verificarSenha() {
         mensagem.innerText = "Senha correta! Redirecionando...";
 
         setTimeout(() => {
-            window.location.href = "index.html";
+            window.location.href = "Home.html";
         }, 1500);
     } 
 

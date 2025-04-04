@@ -72,10 +72,5 @@ document.addEventListener("DOMContentLoaded", function () {
         index = (index - 1 + total) % total;
         mostrarImagem(index);
     });
-
-    setInterval(() => {
-        index = (index + 1) % total;
-        mostrarImagem(index);
-    }, 5000);
 });
 

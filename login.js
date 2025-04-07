@@ -1,8 +1,19 @@
 function verificarSenha() {
     let senhaCorreta = "027752";
-    let easter_egg = "meupeixinhofavorito123"
+    let easter_egg = {
+        "meupeixinhofavorito123": {
+            mensagem: "Pescou meu coração 🐟",
+            imagem: "img2.jpg"
+        },
+        "bocó": {
+            mensagem: "Bocó é você oxi 😡😡",
+            imagem: "img7.jpg"
+
+        }
+    }
     let senhaDigitada = document.getElementById("senha").value;
     let mensagem = document.getElementById("mensagem");
+    const imagem = document.getElementById("imagem-peixe");
 
     if (senhaDigitada === senhaCorreta) {
         mensagem.style.color = "green";
@@ -13,10 +24,11 @@ function verificarSenha() {
         }, 1500);
     } 
 
-    else if (senhaDigitada == easter_egg){
+    else if (senhaDigitada in easter_egg){
+        const ovo = easter_egg[senhaDigitada]
         mensagem.style.color = "green"
-        mensagem.innerText = "Pescou meu coração 🐟"
-        document.getElementById("imagem-peixe").src = "img2.jpg";
+        mensagem.innerText = ovo.mensagem
+        imagem.src = ovo.imagem
     }
     
     

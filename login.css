@@ -1,42 +1,73 @@
-body{
-    background: rgb(71,0,122);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Pacifico&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
     background: linear-gradient(90deg, rgba(71,0,122,1) 0%, rgba(154,19,217,1) 31%, rgba(235,19,92,1) 53%, rgba(254,205,41,1) 65%, rgba(252,177,10,1) 78%, rgba(255,95,63,1) 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-
-#imagem-peixe{
-    padding: 10px;
-    width: 300px;
-
-}
-
 
 .campo-login {
-    background: rgba(255, 255, 255, 0.668);
-    padding: 20px;
-    width: 300px;
-    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 30px;
+    width: 320px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.campo-login:hover {
+    transform: scale(1.02);
+}
+
+#imagem-peixe {
+    width: 180px;
+    margin-bottom: 15px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.campo-login h2 {
+    font-family: 'Pacifico', cursive;
+    color: #8b006b;
+    margin-bottom: 15px;
+    font-size: 2em;
 }
 
 input {
     width: 90%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
 }
 
 button {
     background: #ff4081;
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background: #d63384;
+    background: #e91e63;
+    transform: scale(1.05);
 }

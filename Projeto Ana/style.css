@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Pacifico&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(90deg, rgba(71,0,122,1) 0%, rgba(154,19,217,1) 31%, rgba(235,19,92,1) 53%, rgba(254,205,41,1) 65%, rgba(252,177,10,1) 78%, rgba(255,95,63,1) 100%);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #111;
+    padding: 30px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    margin-top: 0;
+    color: #8b006b;
+}
+
+section {
+    margin: 30px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+#contador-tempo p {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #d81b60;
+}
+
+#proximas-datas ul {
+    list-style: none;
+    padding: 0;
+}
+
+#proximas-datas li {
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #6a097d;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    font-size: 0.95em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 90%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    max-width: 600px;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.4);
+    color: #111;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* musiquinhaaasss */
+#playlist {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.551);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+#playlist iframe {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: none;
+}

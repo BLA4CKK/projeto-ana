@@ -1,4 +1,5 @@
 //Parte do calculo das datas(Maldito seja o datetime)
+console.log("Lookism, Ninjago, 231024, Bocó, meupeixinhofavorito123")
 const dataInicio = new Date(2024, 9, 23);
 
 function calcularTempoJuntos() {

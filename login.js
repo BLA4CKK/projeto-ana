@@ -1,3 +1,4 @@
+console.log("Lookism, Ninjago, 231024, Bocó, meupeixinhofavorito123")
 function verificarSenha() {
     let senhaCorreta = "027752";
     let easter_egg = {
